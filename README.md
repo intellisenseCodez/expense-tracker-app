@@ -79,3 +79,13 @@ expense-tracker-app/
 6. Exit App
 
 ![Exit App!](/img/exit-app.png "Exit App")
+
+## Resources
+***
+* [Markdown Guide](https://www.markdownguide.org/basic-syntax/#overview).
+
+* [Virtual Environment](https://www.freecodecamp.org/news/how-to-setup-virtual-environments-in-python/)
+
+* [Pretty Table](https://zetcode.com/python/prettytable/)
+
+* [Class Diagram](https://lucid.app/lucidchart/5b7db24d-1f20-4ac4-8eaa-437a625607b4/edit?beaconFlowId=15CDE8413F6F4D8B&invitationId=inv_3a79aa2f-6b55-4273-8741-0419894c43ac&page=0_0#)
