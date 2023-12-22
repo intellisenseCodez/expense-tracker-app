@@ -11,11 +11,11 @@ class Expense():
     # constructor
     def __init__(self, title, amount):
         # instance variables
-        self.id = repr(uuid4())
+        self.id = uuid4()
         self.title = title
         self.amount = amount
-        self.created_at = repr(datetime.now())
-        self.updated_at = repr(datetime.now())
+        self.created_at = datetime.now()
+        self.updated_at = datetime.now()
         
     
     # instance methods    
@@ -25,7 +25,7 @@ class Expense():
         """
         self.title = new_title if new_title != None else self.title 
         self.amount = new_amount if new_amount != None else self.amount
-        self.updated_at = repr(datetime.utcnow())
+        self.updated_at = datetime.now()
         
         return f"Expense with ID:{self.id} successfully updated."
             
@@ -95,13 +95,18 @@ class ExpenseDB():
         """
         Returns a list of dictionaries representing expenses.
         """
-        
-        pass
+        expense_db_dict = {'id': [expense.id for expense in self.expense_db], 
+                        'title': [expense.title for expense in self.expense_db],
+                        'amount': [expense.amount for expense in self.expense_db],
+                        'created_at': [expense.created_at for expense in self.expense_db],
+                        'updated_at': [expense.updated_at for expense in self.expense_db]}
+        return expense_db_dict
     
     def __repr__(self):
         """
         Return a string represntation of the object
         """
         class_name = type(self).__name__
-        return f"{class_name}"
+        return f"{class_name}(expenses={self.expense_db!r}"
+
     
