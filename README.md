@@ -82,7 +82,7 @@ expense-tracker-app/
 
 ## Resources
 ***
-* [Markdown Guide](https://www.markdownguide.org/basic-syntax/#overview).
+* [Markdown Guide](https://www.markdownguide.org/basic-syntax/#overview)
 
 * [Virtual Environment](https://www.freecodecamp.org/news/how-to-setup-virtual-environments-in-python/)
 
